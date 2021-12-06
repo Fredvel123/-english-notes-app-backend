@@ -1,0 +1,17 @@
+POST http://localhost:8000/api/users/sigin HTTP/1.1
+Content-type: application/json
+
+{
+  "name": "freddy Erick",
+  "email": "fredd@gmai.com",
+  "password": "freddy",
+  "avatar": ""
+}
+###
+POST http://localhost:8000/api/users/login HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "fredd@gmai.com",
+  "password": "freddy"
+}

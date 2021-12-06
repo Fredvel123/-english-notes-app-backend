@@ -8,7 +8,11 @@ app.use(express.json());
 app.use(cors());
 
 // routes
-
+const userRouters = require('./routers/userRouter');
+app.use('/api/users', userRouters);
+// videos
+const videoRouter = require('./routers/videosRouter');
+app.use('/api/videos', videoRouter)
 
 app.get('/', (req, res) => {
   res.send('server is online')
